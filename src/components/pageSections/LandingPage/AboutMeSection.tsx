@@ -3,12 +3,7 @@ import LinkBadge from "@/components/badge/LinkBadge";
 import ContactLink from "@/components/Links/ContactLink";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { contactLinks, techStack } from "@/content/aboutMeContent";
-import {
-  Blocks,
-  LinkIcon,
-  LucideIcon,
-  MapPin,
-} from "lucide-react";
+import { Blocks, LinkIcon, LucideIcon, MapPin } from "lucide-react";
 import Link from "next/link";
 import React, { ReactNode } from "react";
 
@@ -53,10 +48,19 @@ const AboutMeSection = () => {
         </Card>
 
         <SectionCard Icon={Blocks} title="Tech Stack" className="flex-1">
-          <div className="flex flex-wrap gap-1.5">
-            {techStack.map(({ href, label, color }) => (
-              <LinkBadge key={label} href={href} label={label} color={color} />
-            ))}
+          <div className="flex flex-wrap gap-4">
+            {Object.keys(techStack).map((label) => {
+              const { href, color } =
+                techStack[label as keyof typeof techStack];
+              return (
+                <LinkBadge
+                  key={label}
+                  href={href}
+                  label={label}
+                  color={color}
+                />
+              );
+            })}
           </div>
         </SectionCard>
       </div>

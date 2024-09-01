@@ -1,6 +1,7 @@
 IDCOLAB
 Raplenish
 NOON
+
 https://srigorack-website.vercel.app/
 
 Featured projects
@@ -9,12 +10,10 @@ busmate
 dart
 rayAuth
 
-
-
-
 projects
 busmate
 dart
+
 rayAuth
 IDCOLAB
 Raplenish
@@ -24,3 +23,7 @@ https://srigorack-website.vercel.app/
 //make this
 teaching web
 rcmade console
+
+write the proper description to explain how i worked in this website, i will use this description in my portfolio website : this my own project, this project is made up with nextjs, mongodb, cloudinary, razorpay, shadcn ui, this project is helps the college student to print the bulk of  prints, it allows user the upload there pdf and send the hard copy of it to there 
+
+

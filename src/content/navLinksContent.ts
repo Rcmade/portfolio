@@ -1,12 +1,7 @@
-
 export const navLinksContent = [
   {
     title: "Home",
     href: "/",
-  },
-  {
-    title: "Projects",
-    href: "/projects",
   },
   {
     title: "About",
