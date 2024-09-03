@@ -4,7 +4,7 @@ import React from "react";
 
 const SampleProjectSection = () => {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 my-4">
       {projectContent.map((p, i) => (
         <ProjectCard
           key={p.projectTitle}

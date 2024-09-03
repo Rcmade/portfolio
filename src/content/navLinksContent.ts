@@ -13,8 +13,8 @@ export const navLinksContent = [
     href: "/contact",
   },
 
-  {
-    title: "Blog",
-    href: "/blog",
-  },
+  // {
+  //   title: "Blog",
+  //   href: "/blog",
+  // },
 ];
