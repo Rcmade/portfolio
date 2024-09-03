@@ -64,6 +64,17 @@ export const projectContent: ProjectCardProps[] = [
 
   {
     description:
+      "In this project, I was tasked to modify the Next.js and GSAP templates provided by the client. My responsibilities included: Template Customization: Existing Next.js and GSAP templates are designed to meet the customer’s specific needs and configuration preferences. This required changing layout, features and design images to match the client’s vision. Feedback: Ensured that the website worked on a variety of devices and screen sizes, and provided a seamless user experience on desktop and mobile platforms, Feature Implementation: Features that are integrated and tailored to customer specifications, increasing website usability and visual appeal. Performance Improvements: Optimized web rendering to ensure fast delivery and smooth graphics using GSAP for high-performance animation and Next.js for server-side rendering This role means I can tailor existing designs to specific client requirements whilst maintaining high design and workmanship standards.",
+    imageAlt: "GORack",
+    imageSrc: "/images/gorack.png",
+    projectLink: "https://srigorack.in",
+    projectTitle: "GoRack",
+    type: "LINK",
+    techStackList: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
+  },
+
+  {
+    description:
       "This was my personal project, which helped college students by showing them the real-time location of buses. The app was built using React Native for the Android platform, using Express for backend support and MongoDB as the database, and socket.io for websocket. Core features included the capability to track the location of buses and provide current information to the students about the location of the bus, along with the driver and a list of students in the bus. Technology Stack: The project used React Native for the mobile app, and on the back-end, it used Express while MongoDB was used for data storage. Project Status: The application worked; it is no longer up because there were some security issues pointed out by the administration at college. From the above project, it demonstrates my skill in developing a mobile application based on integration of real-time tracking of data hence comprising both the front-end and back-end skills.",
     imageAlt: "Busmate",
     imageSrc: "/images/busmate.png",
@@ -88,7 +99,14 @@ export const projectContent: ProjectCardProps[] = [
     imageSrc: "/images/dart.png",
     projectLink: "https://dart-mist.vercel.app/",
     projectTitle: "Dart Print",
-    subImgs: ["/images/dart.png", "/images/dart2.png"],
+    subImgs: [
+      "/images/dart.png",
+      "/images/dart2.png",
+      "/images/dart3.png",
+      "/images/dart4.png",
+      "/images/dart5.png",
+      "/images/dart6.png",
+    ],
     techStackList: [
       "Next.js",
       "Figma",

@@ -2,9 +2,14 @@ import LinkBadge from "@/components/badge/LinkBadge";
 import ProjectsLink from "@/components/Links/ProjectsLink";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { techStack } from "@/content/aboutMeContent";
-import Link from "next/link";
+import { Metadata } from "next";
 
-export default function Component() {
+
+
+export const metadata: Metadata = {
+  title: "RAY/About",
+};
+export default function AboutPage() {
   return (
     <main className="flex-1">
       <section className="w-full py-12 md:py-24 lg:py-32">

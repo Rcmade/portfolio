@@ -1,14 +1,13 @@
 import ContactLink from "@/components/Links/ContactLink";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { contactLinks } from "@/content/aboutMeContent";
-import { Github, Linkedin, Mail } from "lucide-react";
-import Image from "next/image";
 import ContactForm from "./_ContactForm";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "RAY/Contact",
+};
 export default function ContactPage() {
   return (
     <div className="p-4">
