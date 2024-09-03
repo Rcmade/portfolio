@@ -5,6 +5,7 @@ import { Toaster } from "sonner";
 import { ThemeProvider } from "@/provider/ThemeProvider";
 import MainNavbar from "@/components/headers/MainNavbar";
 import MainFooter from "@/components/footers/MainFooter";
+import { RAY_LOGO_PUBLIC_URL } from "@/constant";
 
 const inter = Inter({
   weight: ["200", "400", "600"],
@@ -13,10 +14,10 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "RAY",
-  description: "Provides printout services for the university community.",
+  description: "Web development portfolio website.",
   other: {
     "og:url": process.env.NEXT_PUBLIC_BASE_URL as string,
-    //  "og:image": DARK_LOGO_PUBLIC_URL || "",
+    "og:image": RAY_LOGO_PUBLIC_URL || "",
     "og:type": "website",
   },
 };
@@ -37,7 +38,7 @@ export default function RootLayout({
         >
           <MainNavbar />
           <main className="px-2 md:px-12 xl:px-32">{children}</main>
-          <MainFooter/>
+          <MainFooter />
           <Toaster position="top-center" />
         </ThemeProvider>
       </body>
