@@ -76,4 +76,5 @@ export const techStack = {
     href: "https://razorpay.com",
     color: "bg-blue-500",
   },
+  
 };

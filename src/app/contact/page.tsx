@@ -26,9 +26,9 @@ export default function ContactPage() {
               <div className="mb-6 flex items-center">
                 <Avatar className="h-16 w-16">
                   <AvatarImage
-                    src="/images/rahul.jpeg"
+                    src="https://res.cloudinary.com/du1fpl9ph/image/upload/v1754133344/ray-portfolio/aab97fbb-dd4a-4913-be30-987da3a01e3b.png"
                     alt="Rahul Chourasiya"
-                    className="scale-110 object-contain"
+                    className="scale-[130%] object-contain"
                   />
                   <AvatarFallback>RC</AvatarFallback>
                 </Avatar>

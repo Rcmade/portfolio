@@ -17,9 +17,9 @@ export default function AboutPage() {
           <div className="flex flex-col items-center justify-center gap-4">
             <Avatar className="h-52 w-52">
               <AvatarImage
-                src="/images/rahul.jpeg"
+                src="https://res.cloudinary.com/du1fpl9ph/image/upload/v1754133344/ray-portfolio/aab97fbb-dd4a-4913-be30-987da3a01e3b.png"
                 alt="Rahul Chourasiya"
-                className="scale-110 object-cover"
+                className="scale-[130%] object-contain"
               />
               <AvatarFallback>RC</AvatarFallback>
             </Avatar>
