@@ -24,7 +24,7 @@ const ProjectCard = ({
   return (
     <Card
       className={cn(
-        "group flex flex-col justify-between rounded-lg text-card-foreground shadow-lg dark:shadow-sm dark:shadow-primary/50 lg:flex-row",
+        "group flex flex-col justify-between rounded-lg text-card-foreground shadow-lg dark:shadow-xs dark:shadow-primary/50 lg:flex-row",
         className,
       )}
     >

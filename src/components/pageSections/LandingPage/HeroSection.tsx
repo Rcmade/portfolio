@@ -14,7 +14,7 @@ const HeroSection = () => {
         <h1 className="flex max-w-4xl flex-col text-center text-4xl font-bold md:text-5xl lg:text-6xl">
           Hi I&apos;m a
           <span>
-            <span className="mx-2 bg-gradient-to-r from-rose-700 to-pink-600 bg-clip-text text-transparent">
+            <span className="mx-2 bg-linear-to-r from-rose-700 to-pink-600 bg-clip-text text-transparent">
               Full Stack
             </span>
             developer

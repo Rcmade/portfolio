@@ -8,7 +8,7 @@ import React from "react";
 const SkillSection = () => {
   return (
     <div className="flex w-full flex-col items-center">
-      <div className="flex w-full flex-col justify-center md:gap-x-14 lg:gap-x-[4.5rem] gap-y-16 md:flex-row">
+      <div className="flex w-full flex-col justify-center md:gap-x-14 lg:gap-x-18 gap-y-16 md:flex-row">
         <ExpertiseCard Icon={CodeXml} text="Web Dev Services" />
         <ExpertiseCard Icon={Layers3} text="Custom MERN Solutions" />
         <ExpertiseCard Icon={ResponsiveIcon} text="Responsive Design" />
@@ -18,7 +18,7 @@ const SkillSection = () => {
         />
         <ExpertiseCard Icon={Server} text="Full-Stack Projects" />
       </div>
-      <LinesIcon className="h-52 w-full lg:h-64 max-w-full lg:w-[50rem]" />
+      <LinesIcon className="h-52 w-full lg:h-64 max-w-full lg:w-200" />
       <LogoButton className="pointer-events-none -mt-4 select-none text-9xl" />
     </div>
   );

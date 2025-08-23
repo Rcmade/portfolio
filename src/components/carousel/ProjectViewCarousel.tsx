@@ -22,7 +22,7 @@ const ProjectViewCarousel = ({ subImgs }: ProjectViewCarouselProps) => {
             delay: 2000,
           }),
         ]}
-        className="!max-w-full"
+        className="max-w-full!"
       >
         <CarouselContent className="max-w-full">
           {(subImgs || []).map((img, index) => (

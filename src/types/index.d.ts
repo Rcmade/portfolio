@@ -11,7 +11,12 @@ export type AlertVarientT = "default" | "destructive";
 export type ProjectCardProps = {
   id: string;
   title: string;
-  links: Record<string, string>;
+  links: {
+    github?: string;
+    live?: string;
+    npm?: string;
+    playstore?: string;
+  };
   images: string[];
   description: string;
   implemented: string[];
