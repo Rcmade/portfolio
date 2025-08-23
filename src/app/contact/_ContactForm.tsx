@@ -33,7 +33,6 @@ const ContactForm = () => {
 
   const onSubmit = async (values: ContactSchemaT) => {
     const data = await contactAction(values);
-    console.log({ data });
 
     if (data?.message) {
       setResponseMessage(data.message, "default");
