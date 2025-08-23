@@ -17,15 +17,15 @@ export type ProjectCardProps = {
     npm?: string;
     playstore?: string;
   };
-  
-   type?: "LINK" | "VIEW";
+
+  type?: "LINK" | "VIEW";
   images: string[];
   description: string;
   implemented: string[];
-  techStackList: Array<keyof TechStack>;
+  techStackList: (keyof TechStack)[];
   startDate?: string;
   endDate?: string;
-  featured?:boolean
+  featured?: boolean;
 };
 // {
 //   imageSrc: string;

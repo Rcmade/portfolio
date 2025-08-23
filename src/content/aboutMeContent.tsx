@@ -18,27 +18,36 @@ export const contactLinks = [
   },
 ];
 
-export const techStack: Record<
-  string,
-  {
-    href: string;
-    color: string;
-  }
-> = {
+export const techStack = {
   "Next.js": {
     href: "https://nextjs.org",
     color: "bg-black",
   },
-
+  Javascript: {
+    href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    color: "bg-yellow-400",
+  },
   "Node.js": {
     href: "https://nodejs.org/en",
     color: "bg-green-500",
   },
   "TS-Morph": {
     href: "https://ts-morph.com/",
-    color:"bg-blue-600"
+    color: "bg-blue-600",
   },
 
+  "Three.js": {
+    href: "https://threejs.org/",
+    color: "bg-black",
+  },
+  "Babylon.js": {
+    href: "https://www.babylonjs.com/",
+    color: "bg-orange-500",
+  },
+  GSAP: {
+    href: "https://gsap.com/",
+    color: "bg-green-500",
+  },
   "Hono.js": {
     href: "https://hono.dev/",
     color: "bg-orange-500",
@@ -83,14 +92,26 @@ export const techStack: Record<
     href: "https://getbootstrap.com",
     color: "bg-blue-400",
   },
-  Express: {
+  "Express.js": {
     href: "https://expressjs.com",
     color: "bg-green-400",
   },
 
-  "React-Native": {
+  Firebase: {
+    href: "https://firebase.google.com",
+    color: "bg-yellow-400",
+  },
+  "React Native": {
     href: "https://reactnative.dev",
     color: "bg-yellow-500",
+  },
+  Oidc: {
+    href: "https://openid.net",
+    color: "bg-yellow-500",
+  },
+  Zod: {
+    href: "https://zod.dev",
+    color: "bg-black",
   },
   RazorPay: {
     href: "https://razorpay.com",
@@ -128,6 +149,14 @@ export const techStack: Record<
   Python: {
     href: "https://www.python.org",
     color: "bg-yellow-600",
+  },
+  CodeBuild: {
+    href: "https://aws.amazon.com/codebuild",
+    color: "bg-gray-600",
+  },
+  Bash: {
+    href: "https://www.gnu.org/software/bash",
+    color: "bg-black",
   },
   AWS: {
     href: "https://aws.amazon.com",
@@ -183,10 +212,7 @@ export const techStack: Record<
     href: "https://sentry.io",
     color: "bg-purple-500",
   },
-  k6: {
-    href: "https://k6.io",
-    color: "bg-lime-600",
-  },
+
   Artillery: {
     href: "https://www.artillery.io",
     color: "bg-blue-500",
@@ -210,6 +236,10 @@ export const techStack: Record<
   Terraform: {
     href: "https://www.terraform.io",
     color: "bg-purple-600",
+  },
+  "Drizzle ORM": {
+    href: "https://orm.drizzle.team",
+    color: "bg-green-600",
   },
   "Claude AI": {
     href: "https://claude.ai",
@@ -235,4 +265,40 @@ export const techStack: Record<
     href: "https://developer.chrome.com/docs/lighthouse/overview/",
     color: "bg-green-400",
   },
-};
+  OAuth: {
+    href: "https://oauth.net",
+    color: "bg-gray-600",
+  },
+  HLS: {
+    href: "https://www.npmjs.com/package/hls.js/v/1.0.3-0.canary.7275",
+    color: "bg-blue-600",
+  },
+  "DASH.js": {
+    href: "https://dashjs.org/",
+    color: "bg-blue-600",
+  },
+} as const;
+
+export const primaryTechStack: (keyof typeof techStack)[] = [
+  "Next.js",
+  "React",
+  "Node.js",
+  "Express.js",
+  "TypeScript",
+  "Javascript",
+  "Tailwind CSS",
+  "MongoDB",
+  "PostgreSQL",
+  "Docker",
+  "React Native",
+  "Hono.js",
+  "Git",
+  "AWS",
+  "Jenkins",
+  "Redis",
+  "Redux",
+  "Webpack",
+  "GraphQL",
+  "Vite",
+  "Prettier",
+];

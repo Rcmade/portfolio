@@ -6,7 +6,7 @@ import ContactForm from "./_ContactForm";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "RAY/Contact",
+  title: "Rahul/Contact",
 };
 export default function ContactPage() {
   return (
@@ -40,9 +40,18 @@ export default function ContactPage() {
                 </div>
               </div>
               <p className="mb-6">
-                I&apos;m a passionate web developer with expertise in full stack
-                web development. Let&apos;s work together to bring your ideas to
-                life!
+                <strong>Full Stack Developer</strong> with{" "}
+                <strong>3+ years of experience </strong>
+                delivering end-to-end web applications using{" "}
+                <strong>React / Next.js</strong> and
+                <strong> Node.js / Express</strong>. Skilled in{" "}
+                <strong>TypeScript</strong>, database design (PostgreSQL,
+                MongoDB), authentication (OAuth2 / OIDC / JWT), and building
+                CI/CD pipelines for automated, reliable deployments. Experienced
+                in <strong>performance optimization</strong>,
+                <strong> zero-downtime rollout strategies</strong>,
+                observability, and collaborating across design, product, and
+                DevOps teams to ship high-quality features.
               </p>
             </div>
             <div>

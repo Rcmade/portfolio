@@ -2,12 +2,13 @@ import AvailableButton from "@/components/button/AvailableButton";
 import { Button } from "@/components/ui/button";
 import LeftArrowIcon from "@/icons/LeftArrowIcon";
 import RightArrowsIcon from "@/icons/RightArrowsIcon";
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className="my-16 px-2 flex items-center justify-between md:my-48">
+    <div className="my-16 flex items-center justify-between px-2 md:my-48">
       <RightArrowsIcon className="hidden h-auto w-52 md:block" />
       <div className="flex flex-col items-center gap-8">
         <AvailableButton />
@@ -27,6 +28,16 @@ const HeroSection = () => {
           building modern web applications using Next.js, React, and Tailwind
           CSS.
         </p>
+        <Button
+          asChild
+          variant="shadow"
+          size="lg"
+          className="text-2xl font-medium flex gap-2 items-center"
+        >
+          <Link href={"/projects"}>
+            View All Projects <ArrowRight />
+          </Link>
+        </Button>
       </div>
       <LeftArrowIcon className="hidden h-auto w-72 md:block" />
     </div>

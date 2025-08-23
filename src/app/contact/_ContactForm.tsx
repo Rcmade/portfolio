@@ -37,6 +37,7 @@ const ContactForm = () => {
 
     if (data?.message) {
       setResponseMessage(data.message, "default");
+      form.reset();
     } else if (data?.error) {
       setResponseMessage(data.error, "destructive");
     }
@@ -46,12 +47,20 @@ const ContactForm = () => {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+        <h2 className="text-3xl font-bold">Let’s Work Together</h2>
+        <p>
+          Ready to turn your ideas into reality? Whether you&apos;re building a
+          product from scratch or scaling an existing app, I&apos;m here to
+          help.
+        </p>
         <FormField
           control={form.control}
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Email</FormLabel>
+              {/* <FormLabel>Email</FormLabel> */}
+              <FormLabel className="mb-2 block">Your Email Address</FormLabel>
+
               <FormControl>
                 <Input
                   disabled={isLoading}
@@ -69,11 +78,15 @@ const ContactForm = () => {
           name="subject"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Subject</FormLabel>
+              {/* <FormLabel>Subject</FormLabel> */}
+              <FormLabel className="mb-2 block">
+                What&apos;s this about?
+              </FormLabel>
+
               <FormControl>
                 <Input
                   disabled={isLoading}
-                  placeholder="Subject"
+                  placeholder="e.g. Contract, Job Opportunity, Collaboration"
                   {...field}
                   type="text"
                 />
@@ -87,12 +100,14 @@ const ContactForm = () => {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Message</FormLabel>
+              {/* <FormLabel>Message</FormLabel> */}
+              <FormLabel className="mb-2 block">How can I help?</FormLabel>
+
               <FormControl>
                 <Textarea
                   rows={8}
                   disabled={isLoading}
-                  placeholder="Your message"
+                  placeholder="Feel free to share some project details, timelines, or goals..."
                   {...field}
                 />
               </FormControl>

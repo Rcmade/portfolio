@@ -38,7 +38,7 @@ const ProjectCard = ({
           </div>
         )}
       </div>
-      <div className="w-full lg:border-l lg:p-4">
+      <div className="w-full space-y-4 lg:border-l lg:p-4">
         <div className="flex flex-col space-y-1.5 pt-0 pb-3">
           <ProjectHeading>{data.title}</ProjectHeading>
           {data.startDate && (
@@ -66,7 +66,7 @@ const ProjectCard = ({
 
         <div className="flex flex-wrap gap-2">
           {data.links.github && (
-            <Button size="sm" variant="outline" asChild>
+            <Button size="sm" variant={"shadow"} asChild>
               <Link
                 href={data.links.github}
                 target="_blank"
@@ -78,7 +78,7 @@ const ProjectCard = ({
             </Button>
           )}
           {data.links.live && (
-            <Button size="sm" variant="outline" asChild>
+            <Button size="sm" variant={"shadow"} asChild>
               <Link
                 href={data.links.live}
                 target="_blank"
@@ -90,7 +90,7 @@ const ProjectCard = ({
             </Button>
           )}
           {data.links.npm && (
-            <Button size="sm" variant="outline" asChild>
+            <Button size="sm" variant={"shadow"} asChild>
               <Link
                 href={data.links.npm}
                 target="_blank"

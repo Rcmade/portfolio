@@ -3,7 +3,6 @@ import { Slot, Slottable } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
 
 import { cn } from "@/lib/utils";
-import { Loader } from "lucide-react";
 
 const buttonVariants = cva(
   "inline-flex group items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 ",
@@ -11,6 +10,8 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        shadow:
+          "shadow-md shadow-black/20 transition-all hover:shadow-transparent dark:shadow-white/20 dark:hover:shadow-transparent",
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
@@ -49,9 +50,6 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         {...props}
       >
-        {props.disabled && (
-          <Loader className="hidden animate-spin group-disabled:block" />
-        )}
         <Slottable>{children}</Slottable>
       </Comp>
     );

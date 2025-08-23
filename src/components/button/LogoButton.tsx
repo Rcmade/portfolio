@@ -18,7 +18,7 @@ const LogoButton = ({
         className,
       )}
     >
-      RAY
+      Rahul
     </Link>
   );
 };

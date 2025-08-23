@@ -33,10 +33,7 @@ const AboutMeSection = () => {
             Available for work!
           </Link>
         </Card>
-      </div>
 
-      {/* Tech Stack and Location Section */}
-      <div className="flex flex-col gap-4">
         <Card className="p-4 font-bold">
           <span className="flex items-center gap-x-2 text-lg">
             <MapPin />
@@ -46,7 +43,10 @@ const AboutMeSection = () => {
             India
           </Link>
         </Card>
+      </div>
 
+      {/* Tech Stack and Location Section */}
+      <div className="flex flex-col gap-4">
         <SectionCard Icon={Blocks} title="Tech Stack" className="flex-1">
           <div className="flex flex-wrap gap-4">
             {Object.keys(techStack).map((label) => {

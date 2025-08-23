@@ -13,13 +13,13 @@ export const contactAction = async (data: ContactSchemaT) => {
   const { email, message, subject } = validate.data;
 
   try {
-    const sendEmail = await sendMail({
+    await sendMail({
       subject,
       toEmail: [
         "rahulchourasiya4567@gmail.com",
         "rahulchourasiya0204@gmail.com",
       ],
-      html: message,
+      html: `from ${email} Message: ${message}`,
     });
   } catch (error) {
     return {

@@ -13,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "RAY",
+  title: "Rahul",
   description: "Web development portfolio website.",
   other: {
     "og:url": process.env.NEXT_PUBLIC_BASE_URL as string,

@@ -1,4 +1,4 @@
-import { ProjectCardProps, TechStack } from "@/types";
+import { ProjectCardProps } from "@/types";
 
 // export const projectContent: ProjectCardProps[] = [
 //   {
@@ -46,19 +46,19 @@ import { ProjectCardProps, TechStack } from "@/types";
 //       "/images/replenish1.png",
 //       "/images/replenish2.png",
 //       "/images/replenish3.png",
-      // "/images/replenish4.png",
+// "/images/replenish4.png",
 //       "/images/replenish5.png",
 //     ],
 //     projectLink: "#",
 //     projectTitle: "REPLENISH MD",
 //     techStackList: [
-//       "Next.js",
-//       "Figma",
-//       "Bootstrap",
-//       "React",
-//       "Git",
-//       "TypeScript",
-//       "MySQL",
+// "Next.js",
+// "Figma",
+// "Bootstrap",
+// "React",
+// "Git",
+// "TypeScript",
+// "MySQL",
 //     ],
 //   },
 
@@ -91,31 +91,31 @@ import { ProjectCardProps, TechStack } from "@/types";
 //     ],
 //   },
 
-  // {
-  //   description:
-  //     "This project is my own creation-entirely created for the convenience of printing out in bulk by university students. The web application frontend was created using Next.js, MongoDB as the database, Cloudinary for the uploading of files, Razorpay for payment integrations, and ShadCN UI for the user interface. Core Functionality: The web application gives users the facility to upload their PDF documents, which automatically send hard copies of these documents directly to each classroom to rapidly take care of student printing tasks. Technology Stack: Next.js for seamless web experience; MongoDB for efficient data management; Cloudinary for secure file handling; Razorpay for seamless payment transactions; and ShadCN UI for clean and responsive interface. This project reveals my skills in building full-stack applications that solve real-life problems with regard for user convenience and judicious use of modern technologies.",
-  //   imageAlt: "Dart",
-  //   type: "VIEW",
-  //   imageSrc: "/images/dart.png",
-  //   projectLink: "https://dart-mist.vercel.app/",
-  //   projectTitle: "Dart Print",
-  //   subImgs: [
-      // "/images/dart.png",
-      // "/images/dart2.png",
-      // "/images/dart3.png",
-      // "/images/dart4.png",
-      // "/images/dart5.png",
-      // "/images/dart6.png",
-  //   ],
-  //   techStackList: [
-  //     "Next.js",
-  //     "Figma",
-  //     "React",
-  //     "Git",
-  //     "TypeScript",
-  //     "MongoDB",
-  //   ],
-  // },
+// {
+//   description:
+//     "This project is my own creation-entirely created for the convenience of printing out in bulk by university students. The web application frontend was created using Next.js, MongoDB as the database, Cloudinary for the uploading of files, Razorpay for payment integrations, and ShadCN UI for the user interface. Core Functionality: The web application gives users the facility to upload their PDF documents, which automatically send hard copies of these documents directly to each classroom to rapidly take care of student printing tasks. Technology Stack: Next.js for seamless web experience; MongoDB for efficient data management; Cloudinary for secure file handling; Razorpay for seamless payment transactions; and ShadCN UI for clean and responsive interface. This project reveals my skills in building full-stack applications that solve real-life problems with regard for user convenience and judicious use of modern technologies.",
+//   imageAlt: "Dart",
+//   type: "VIEW",
+//   imageSrc: "/images/dart.png",
+//   projectLink: "https://dart-mist.vercel.app/",
+//   projectTitle: "Dart Print",
+//   subImgs: [
+// "/images/dart.png",
+// "/images/dart2.png",
+// "/images/dart3.png",
+// "/images/dart4.png",
+// "/images/dart5.png",
+// "/images/dart6.png",
+//   ],
+//   techStackList: [
+//     "Next.js",
+//     "Figma",
+//     "React",
+//     "Git",
+//     "TypeScript",
+//     "MongoDB",
+//   ],
+// },
 // ];
 
 type Type = "professional" | "personal";
@@ -142,8 +142,8 @@ export const projectContent: Record<Type, ProjectCardProps[]> = {
       techStackList: ["Node.js", "TS-Morph", "Hono.js"],
       startDate: "Jun 2025",
       endDate: "Jul 2025",
-      featured:true,
-      type:"LINK"
+      featured: true,
+      type: "LINK",
     },
     {
       id: "mediscan",
@@ -169,17 +169,17 @@ export const projectContent: Record<Type, ProjectCardProps[]> = {
       techStackList: [
         "React",
         "Next.js",
-        "TailwindCSS",
+        "Tailwind CSS",
         "Hono.js",
-        "Shadcn",
+        "Shadcn/ui",
         "AWS",
         "Jenkins",
         "TypeScript",
       ],
       startDate: "Dec 2024",
       endDate: "Jun 2025",
-      featured:true,
-      type:"LINK"
+      featured: true,
+      type: "LINK",
     },
     {
       id: "idcolab",
@@ -204,12 +204,11 @@ export const projectContent: Record<Type, ProjectCardProps[]> = {
         "Redux",
         "Three.js",
         "Babylon.js",
-        "TailwindCSS",
+        "Tailwind CSS",
       ],
       startDate: "Jan 2024",
       endDate: "Jun 2024",
-      featured:true,
-
+      featured: true,
     },
     {
       id: "noon",
@@ -237,19 +236,18 @@ export const projectContent: Record<Type, ProjectCardProps[]> = {
       ],
       startDate: "Jun 2023",
       endDate: "Sep 2023",
-      featured:true,
-
+      featured: true,
     },
     {
       id: "replenish-md",
       title: "Replenish MD - Medical Care Admin Panel",
       links: { live: "https://inv.replenishaw.com" },
       images: [
-      "https://res.cloudinary.com/du1fpl9ph/image/upload/v1753966323/ray-portfolio/b0e47ddb-921f-4745-924f-6c64fe642881.png",
-      "/images/replenish2.png",
-      "/images/replenish3.png",
-      "/images/replenish4.png",
-      "https://res.cloudinary.com/du1fpl9ph/image/upload/v1753966372/ray-portfolio/2d2cfd2e-dfb0-4e56-9dab-320cebafba96.png",
+        "https://res.cloudinary.com/du1fpl9ph/image/upload/v1753966323/ray-portfolio/b0e47ddb-921f-4745-924f-6c64fe642881.png",
+        "/images/replenish2.png",
+        "/images/replenish3.png",
+        "/images/replenish4.png",
+        "https://res.cloudinary.com/du1fpl9ph/image/upload/v1753966372/ray-portfolio/2d2cfd2e-dfb0-4e56-9dab-320cebafba96.png",
       ],
       description:
         "Admin panel for managing appointments, invoices, staff, and inventory in a medical platform. Built frontend in React, backend in RoR by teammate.",
@@ -258,12 +256,19 @@ export const projectContent: Record<Type, ProjectCardProps[]> = {
         "Modules: personnel, inventory, invoices, appointments",
         "Responsive layout with Tailwind + React-Bootstrap",
       ],
-      techStackList: ["React", "TailwindCSS", "React-Bootstrap", "TypeScript"],
+      techStackList: [
+        "React",
+        "Tailwind CSS",
+        "Bootstrap",
+        "Git",
+        "TypeScript",
+        "MySQL",
+        "Figma",
+      ],
       startDate: "Jan 2023",
       endDate: "Jun 2023",
-      featured:true,
-      type: "VIEW"
-
+      featured: true,
+      type: "VIEW",
     },
     {
       id: "gorack",
@@ -280,7 +285,7 @@ export const projectContent: Record<Type, ProjectCardProps[]> = {
         "Advanced SCSS theming",
         "SSR for SEO & performance",
       ],
-      techStackList: ["Next.js", "React", "GSAP", "SCSS"],
+      techStackList: ["Next.js", "React", "GSAP"],
       startDate: "Nov 2022",
       endDate: "Feb 2023",
     },
@@ -310,7 +315,7 @@ export const projectContent: Record<Type, ProjectCardProps[]> = {
         "Next.js",
         "PostgreSQL",
         "TypeScript",
-        "oidc-provider",
+        "Oidc",
         "Zod",
         "Drizzle ORM",
       ],
@@ -330,14 +335,7 @@ export const projectContent: Record<Type, ProjectCardProps[]> = {
         "EC2 deployment automation",
         "Reusable Jenkinsfiles + scripts",
       ],
-      techStackList: [
-        "Jenkins",
-        "Docker",
-        "AWS EC2",
-        "ECR",
-        "CodeBuild",
-        "Bash",
-      ],
+      techStackList: ["Jenkins", "Docker", "AWS", "CodeBuild", "Bash"],
     },
     {
       id: "ray",
@@ -356,42 +354,43 @@ export const projectContent: Record<Type, ProjectCardProps[]> = {
       images: [
         "https://res.cloudinary.com/du1fpl9ph/image/upload/v1755926838/ray-portfolio/d58d25ad-daab-4527-8f1e-04c70d62ee62.png",
       ],
-      techStackList: ["Node.js", "TypeScript", "CLI", "Encryption"],
+      techStackList: ["Node.js", "TypeScript"],
     },
 
     {
-  id: "dartprint",
-  title: "Dart Print",
-  links: {
-    live: "https://dart-mist.vercel.app/",
-  },
-  images: [
-      "/images/dart.png",
-      "/images/dart2.png",
-      "/images/dart3.png",
-      "/images/dart4.png",
-      "/images/dart5.png",
-      "/images/dart6.png",
-  ],
-  description:
-    "A full-stack print service platform designed for university students to upload PDFs and get them printed automatically. Built using modern technologies to streamline student printing tasks.",
-  implemented: [
-    "Upload and store PDF documents securely",
-    "Automated delivery of prints to classroom locations",
-    "Payment integration using Razorpay",
-    "Responsive and accessible UI using ShadCN",
-    "Image/file handling via Cloudinary",
-    "Full-stack development with Next.js and MongoDB",
-  ],
-  techStackList: [
-    "Next.js",
-    "Figma",
-    "React",
-    "Git",
-    "TypeScript",
-    "MongoDB",
-  ],
-},
+      id: "dartprint",
+      title: "Dart Print",
+      links: {
+        live: "https://dart-mist.vercel.app/",
+      },
+      type: "VIEW",
+      images: [
+        "/images/dart.png",
+        "/images/dart2.png",
+        "/images/dart3.png",
+        "/images/dart4.png",
+        "/images/dart5.png",
+        "/images/dart6.png",
+      ],
+      description:
+        "A full-stack print service platform designed for university students to upload PDFs and get them printed automatically. Built using modern technologies to streamline student printing tasks.",
+      implemented: [
+        "Upload and store PDF documents securely",
+        "Automated delivery of prints to classroom locations",
+        "Payment integration using Razorpay",
+        "Responsive and accessible UI using ShadCN",
+        "Image/file handling via Cloudinary",
+        "Full-stack development with Next.js and MongoDB",
+      ],
+      techStackList: [
+        "Next.js",
+        "Figma",
+        "React",
+        "Git",
+        "TypeScript",
+        "MongoDB",
+      ],
+    },
     {
       id: "busmate",
       title: "Busmate - Real-Time College Bus Tracking App",
@@ -419,7 +418,6 @@ export const projectContent: Record<Type, ProjectCardProps[]> = {
         "Express.js",
         "MongoDB",
         "Firebase",
-        "Google Maps API",
       ],
     },
   ],

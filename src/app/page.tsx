@@ -12,7 +12,6 @@ const page = () => {
       <HeroSection />
       <SkillSection />
       <Separator orientation="horizontal" className="my-4" />
-      {/* TODO: Project Section */}
       <CenterHeading id="projects" text="Projects" />
       <SampleProjectSection />
       <Separator orientation="horizontal" className="relative -z-10 my-4" />
