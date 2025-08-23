@@ -11,9 +11,9 @@ import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 
 interface ProjectViewCarouselProps {
-  subImgs: string[];
+  imgs: string[];
 }
-const ProjectViewCarousel = ({ subImgs }: ProjectViewCarouselProps) => {
+const ProjectViewCarousel = ({ imgs }: ProjectViewCarouselProps) => {
   return (
     <div className="px-10">
       <Carousel
@@ -25,7 +25,7 @@ const ProjectViewCarousel = ({ subImgs }: ProjectViewCarouselProps) => {
         className="max-w-full!"
       >
         <CarouselContent className="max-w-full">
-          {(subImgs || []).map((img, index) => (
+          {(imgs || []).map((img, index) => (
             <CarouselItem key={index}>
               <Image
                 src={img}

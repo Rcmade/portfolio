@@ -5,7 +5,7 @@ import { z } from "zod";
 
 type TechStack = typeof techStack;
 type TechStackEntry = TechStack[keyof TechStack];
-type TechStack = Record<string, TechStackEntry>;
+// type TechStack = Record<string, TechStackEntry>;
 export type AlertVarientT = "default" | "destructive";
 
 export type ProjectCardProps = {
@@ -17,12 +17,15 @@ export type ProjectCardProps = {
     npm?: string;
     playstore?: string;
   };
+  
+   type?: "LINK" | "VIEW";
   images: string[];
   description: string;
   implemented: string[];
   techStackList: Array<keyof TechStack>;
   startDate?: string;
   endDate?: string;
+  featured?:boolean
 };
 // {
 //   imageSrc: string;

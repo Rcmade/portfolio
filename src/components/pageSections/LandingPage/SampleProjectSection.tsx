@@ -3,20 +3,17 @@ import { projectContent } from "@/content/projectContent";
 import React from "react";
 
 const SampleProjectSection = () => {
+  const projects = [
+    ...projectContent.professional,
+    ...projectContent.personal,
+  ].filter((p) => p.featured);
   return (
-    <div className="flex flex-col gap-4 my-4">
-      {projectContent.map((p, i) => (
+    <div className="my-4 flex flex-col gap-4">
+      {projects.map((p, i) => (
         <ProjectCard
-          key={p.projectTitle}
+          key={p.id}
           className={i % 2 === 0 ? "lg:flex-row-reverse" : ""}
-          description={p.description}
-          imageAlt={p.imageAlt}
-          type={p.type}
-          imageSrc={p.imageSrc}
-          projectLink={p.projectLink}
-          projectTitle={p.projectTitle}
-          subImgs={p?.subImgs}
-          techStackList={p.techStackList}
+          data={p}
         />
       ))}
     </div>

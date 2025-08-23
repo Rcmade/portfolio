@@ -5,37 +5,32 @@ import ProjectHeading from "@/components/headings/ProjectHeading";
 import LinkBadge from "@/components/badge/LinkBadge";
 import { getTechStackEntries } from "@/lib/utils/dataFormateUtils";
 import { techStack } from "@/content/aboutMeContent";
-import { ProjectCardProps, TechStack } from "@/types";
+import { ProjectCardProps } from "@/types";
 import { cn } from "@/lib/utils";
 import ProjectViewCarousel from "../carousel/ProjectViewCarousel";
-
+import { ExternalLink, Github, Package } from "lucide-react";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 const ProjectCard = ({
-  imageSrc,
-  imageAlt,
-  projectTitle,
-  projectLink,
-  description,
-  techStackList,
   className,
-  type,
-  subImgs,
-}: ProjectCardProps & React.HTMLAttributes<HTMLDivElement>) => {
+  data,
+}: { data: ProjectCardProps } & React.HTMLAttributes<HTMLDivElement>) => {
   return (
     <Card
       className={cn(
-        "group flex flex-col justify-between rounded-lg text-card-foreground shadow-lg dark:shadow-xs dark:shadow-primary/50 lg:flex-row",
+        "group text-card-foreground dark:shadow-primary/50 flex flex-col justify-between rounded-lg shadow-lg lg:flex-row dark:shadow-xs",
         className,
       )}
     >
       <div className="flex w-full p-4">
-        {type === "VIEW" && (subImgs || [])?.length > 0 ? (
-          <ProjectViewCarousel subImgs={subImgs || []} />
+        {data.type === "VIEW" && (data.images || [])?.length > 0 ? (
+          <ProjectViewCarousel imgs={data.images || []} />
         ) : (
           <div className="overflow-hidden rounded-lg">
             <Image
-              src={imageSrc}
-              alt={imageAlt}
+              src={data.images[0]}
+              alt={data.title}
               width={700}
               height={500}
               className="rounded-md object-contain"
@@ -43,28 +38,69 @@ const ProjectCard = ({
           </div>
         )}
       </div>
-      <div className="items- w-full lg:flex lg:border-l lg:p-4">
-        <div>
-          <div className="flex flex-col space-y-1.5 pb-3 pt-0">
-            <ProjectHeading type={type} href={projectLink}>
-              {projectTitle}
-            </ProjectHeading>
-            <p className="text-sm text-muted-foreground">{description}</p>
+      <div className="w-full lg:border-l lg:p-4">
+        <div className="flex flex-col space-y-1.5 pt-0 pb-3">
+          <ProjectHeading>{data.title}</ProjectHeading>
+          {data.startDate && (
+            <p className="text-muted-foreground">
+              {data.startDate} {data.endDate ? ` - ${data.endDate}` : ""}
+            </p>
+          )}
+          <p className="text-muted-foreground text-sm">{data.description}</p>
+          <div className="text-muted-foreground flex flex-col gap-2">
+            <ul className="list-inside list-disc space-y-1">
+              {data.implemented.map((item, idx) => (
+                <li key={idx}>{item}</li>
+              ))}
+            </ul>
           </div>
-          <div className="flex flex-wrap items-center gap-4">
-            {Object.keys(getTechStackEntries(techStackList)).map((label) => {
-              const { href, color } =
-                techStack[label as keyof typeof techStack];
-              return (
-                <LinkBadge
-                  key={label}
-                  href={href}
-                  label={label}
-                  color={color}
-                />
-              );
-            })}
-          </div>
+        </div>
+        <div className="flex flex-wrap items-center gap-4">
+          {Object.keys(getTechStackEntries(data.techStackList)).map((label) => {
+            const { href, color } = techStack[label as keyof typeof techStack];
+            return (
+              <LinkBadge key={label} href={href} label={label} color={color} />
+            );
+          })}
+        </div>
+
+        <div className="flex flex-wrap gap-2">
+          {data.links.github && (
+            <Button size="sm" variant="outline" asChild>
+              <Link
+                href={data.links.github}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github className="mr-2 h-4 w-4" />
+                Code
+              </Link>
+            </Button>
+          )}
+          {data.links.live && (
+            <Button size="sm" variant="outline" asChild>
+              <Link
+                href={data.links.live}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ExternalLink className="mr-2 h-4 w-4" />
+                Live Demo
+              </Link>
+            </Button>
+          )}
+          {data.links.npm && (
+            <Button size="sm" variant="outline" asChild>
+              <Link
+                href={data.links.npm}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Package className="mr-2 h-4 w-4" />
+                NPM
+              </Link>
+            </Button>
+          )}
         </div>
       </div>
     </Card>
