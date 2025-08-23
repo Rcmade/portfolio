@@ -9,14 +9,25 @@ type TechStack = Record<string, TechStackEntry>;
 export type AlertVarientT = "default" | "destructive";
 
 export type ProjectCardProps = {
-  imageSrc: string;
-  imageAlt: string;
-  projectTitle: string;
-  projectLink: string;
+  id: string;
+  title: string;
+  links: Record<string, string>;
+  images: string[];
   description: string;
+  implemented: string[];
   techStackList: Array<keyof TechStack>;
-  type?: "LINK" | "VIEW";
-  subImgs?: string[];
+  startDate?: string;
+  endDate?: string;
 };
+// {
+//   imageSrc: string;
+//   imageAlt: string;
+//   projectTitle: string;
+//   projectLink: string;
+//   description: string;
+//   techStackList: Array<keyof TechStack>;
+//   type?: "LINK" | "VIEW";
+//   subImgs?: string[];
+// };
 
 export type ContactSchemaT = z.infer<typeof contactSchema>;
