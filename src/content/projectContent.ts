@@ -287,7 +287,7 @@ export const projectContent: Record<Type, ProjectCardProps[]> = {
       ],
       techStackList: ["Next.js", "React", "GSAP"],
       startDate: "Nov 2022",
-      endDate: "Feb 2023",
+      endDate: "Nov 2022",
     },
   ],
 
