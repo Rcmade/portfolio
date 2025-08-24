@@ -1,8 +1,9 @@
 import LinkBadge from "@/components/badge/LinkBadge";
 import ProjectsLink from "@/components/Links/ProjectsLink";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+// import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { primaryTechStack, techStack } from "@/content/aboutMeContent";
 import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Rahul/About",
@@ -13,14 +14,26 @@ export default function AboutPage() {
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container grid gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
           <div className="flex flex-col items-center gap-4">
-            <Avatar className="h-52 w-52">
+            {/* <Avatar className="h-52 w-52">
               <AvatarImage
                 src="https://res.cloudinary.com/du1fpl9ph/image/upload/v1755940344/ray-portfolio/aab97fbb-dd4a-4913-be30-987da3a01e3b.jpg"
-                alt="Rahul Chourasiya"
+                asChild
+                className="scale-[130%] object-contain"
+              >
+              </AvatarImage>
+              <AvatarFallback>RC</AvatarFallback>
+            </Avatar> */}
+
+            <div className="border-muted-foreground relative size-48 overflow-hidden rounded-full border bg-white">
+              <Image
+                // width={300}
+                // height={300}
+                fill
+                src="https://res.cloudinary.com/du1fpl9ph/image/upload/v1755940344/ray-portfolio/aab97fbb-dd4a-4913-be30-987da3a01e3b.jpg"
+                alt="RC"
                 className="scale-[130%] object-contain"
               />
-              <AvatarFallback>RC</AvatarFallback>
-            </Avatar>
+            </div>
             <div className="space-y-2 text-center">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                 Rahul Chourasiya

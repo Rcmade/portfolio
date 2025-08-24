@@ -23,10 +23,10 @@ const ContactLink = ({
     <Link
       {...rest}
       href={href}
-      className={cn("flex gap-x-2 max-w-max", className)}
+      className={cn("flex max-w-full gap-x-2", className)}
     >
       <Icon />
-      {title}
+      <span className="truncate text-sm sm:text-lg md:text-xl w-full">{title}</span>
     </Link>
   );
 };

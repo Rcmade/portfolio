@@ -1,22 +1,23 @@
 import ContactLink from "@/components/Links/ContactLink";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+// import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent } from "@/components/ui/card";
 import { contactLinks } from "@/content/aboutMeContent";
 import ContactForm from "./_ContactForm";
 import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Rahul/Contact",
 };
 export default function ContactPage() {
   return (
-    <div className="p-4">
+    <div className="py-4">
       <div className="mx-auto max-w-7xl">
         <h1 className="mb-12 text-center text-4xl font-bold">Get in Touch</h1>
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
           {/* Contact Form */}
-          <Card className="rounded-lg p-8 shadow-lg">
-            <CardContent>
+          <Card className="rounded-lg shadow-lg md:p-8">
+            <CardContent className="p-4">
               <ContactForm />
             </CardContent>
           </Card>
@@ -24,14 +25,24 @@ export default function ContactPage() {
           <Card className="flex flex-col justify-between rounded-lg p-8 shadow-lg">
             <div>
               <div className="mb-6 flex items-center">
-                <Avatar className="h-16 w-16">
+                {/* <Avatar className="h-16 w-16">
                   <AvatarImage
                     src="https://res.cloudinary.com/du1fpl9ph/image/upload/v1754133344/ray-portfolio/aab97fbb-dd4a-4913-be30-987da3a01e3b.png"
                     alt="Rahul Chourasiya"
                     className="scale-[130%] object-contain"
                   />
                   <AvatarFallback>RC</AvatarFallback>
-                </Avatar>
+                </Avatar> */}
+                <div className="border-muted-foreground relative size-32 overflow-hidden rounded-full border bg-white">
+                  <Image
+                    // width={300}
+                    // height={300}
+                    fill
+                    src="https://res.cloudinary.com/du1fpl9ph/image/upload/v1755940344/ray-portfolio/aab97fbb-dd4a-4913-be30-987da3a01e3b.jpg"
+                    alt="RC"
+                    className="scale-[130%] object-contain"
+                  />
+                </div>
                 <div className="ml-4">
                   <h2 className="text-2xl font-bold">Rahul Chourasiya</h2>
                   <p className="text-secondary-foreground">

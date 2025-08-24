@@ -9,7 +9,7 @@ import AvailableButton from "@/components/button/AvailableButton";
 
 const MainFooter = () => {
   return (
-    <footer className="bg-secondary py-8 md:py-12">
+    <footer className="bg-secondary px-3 py-4 sm:px-5 md:px-12 xl:px-32">
       <div className="container grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-3">
         <div className="flex flex-col items-start gap-4">
           <LogoButton />
@@ -19,7 +19,7 @@ const MainFooter = () => {
         </div>
         <div className="grid grid-cols-2 gap-4">
           <div className="grid gap-2">
-            <h4 className="text-sm font-semibold text-foreground">Pages</h4>
+            <h4 className="text-foreground text-sm font-semibold">Pages</h4>
             <nav className="grid gap-1">
               {navLinksContent.map(({ href, title }) => (
                 <NavLink href={href} title={title} key={href} />
@@ -27,7 +27,7 @@ const MainFooter = () => {
             </nav>
           </div>
           <div className="grid gap-2">
-            <h4 className="text-sm font-semibold text-foreground">
+            <h4 className="text-foreground text-sm font-semibold">
               Social Media
             </h4>
             <nav className="flex gap-2">
@@ -43,7 +43,7 @@ const MainFooter = () => {
             </nav>
           </div>
         </div>
-        <div className="flex flex-col items-start gap-4">
+        <div className="flex w-fit flex-col items-start gap-4">
           <h4 className="text-sm font-semibold">Contact</h4>
           <ContactLink
             Icon={Mail}
@@ -53,7 +53,7 @@ const MainFooter = () => {
           <AvailableButton />
         </div>
       </div>
-      <div className="container mt-8 max-w-5xl text-xs text-muted-foreground">
+      <div className="text-muted-foreground container mt-8 max-w-5xl text-xs">
         &copy; {new Date().getFullYear()} Ray. All rights reserved.
       </div>
     </footer>

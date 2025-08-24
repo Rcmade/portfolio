@@ -46,7 +46,9 @@ const ContactForm = () => {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-        <h2 className="text-3xl font-bold">Let’s Work Together</h2>
+        <h2 className="text-center text-3xl font-bold">
+          Let&apos;s Work Together
+        </h2>
         <p>
           Ready to turn your ideas into reality? Whether you&apos;re building a
           product from scratch or scaling an existing app, I&apos;m here to
@@ -117,7 +119,7 @@ const ContactForm = () => {
 
         <FormResultMessage message={message} variant={type} />
 
-        <Button disabled={isLoading} type="submit">
+        <Button className="w-full" disabled={isLoading} type="submit">
           Submit
         </Button>
       </form>

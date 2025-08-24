@@ -149,7 +149,7 @@ export const projectContent: Record<Type, ProjectCardProps[]> = {
       id: "mediscan",
       title: "Mediscan - Hospital Appointment & Queue Management System",
       links: {
-        live: "https://mediscan.qrblack.com",
+        live: "https://mediscan-demo.vercel.app",
         github: "https://github.com/Rcmade/mediscan_super_admin",
       },
       images: [

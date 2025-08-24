@@ -11,7 +11,7 @@ const AboutMeSection = () => {
   return (
     <div className="my-8 grid gap-4 md:grid-cols-2">
       {/* Contact Me Section */}
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 w-full">
         <SectionCard Icon={LinkIcon} title="Contact Me">
           {contactLinks.map(({ Icon, href, title }) => (
             <ContactLink

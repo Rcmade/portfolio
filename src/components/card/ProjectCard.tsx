@@ -8,7 +8,7 @@ import { techStack } from "@/content/aboutMeContent";
 import { ProjectCardProps } from "@/types";
 import { cn } from "@/lib/utils";
 import ProjectViewCarousel from "../carousel/ProjectViewCarousel";
-import { ExternalLink, Github, Package } from "lucide-react";
+import { ExternalLink, Github, Package, Play } from "lucide-react";
 import { Button } from "../ui/button";
 import Link from "next/link";
 
@@ -19,7 +19,7 @@ const ProjectCard = ({
   return (
     <Card
       className={cn(
-        "group text-card-foreground dark:shadow-primary/50 flex flex-col justify-between rounded-lg shadow-lg lg:flex-row dark:shadow-xs",
+        "group text-card-foreground dark:shadow-primary/50 flex flex-col justify-between rounded-lg px-2 py-4 shadow-lg lg:flex-row dark:shadow-xs",
         className,
       )}
     >
@@ -38,7 +38,7 @@ const ProjectCard = ({
           </div>
         )}
       </div>
-      <div className="w-full space-y-4 lg:border-l lg:p-4">
+      <div className="w-full space-y-4 lg:p-4">
         <div className="flex flex-col space-y-1.5 pt-0 pb-3">
           <ProjectHeading>{data.title}</ProjectHeading>
           {data.startDate && (
@@ -98,6 +98,19 @@ const ProjectCard = ({
               >
                 <Package className="mr-2 h-4 w-4" />
                 NPM
+              </Link>
+            </Button>
+          )}
+
+          {data.links.playstore && (
+            <Button size="sm" variant={"shadow"} asChild>
+              <Link
+                href={data.links.playstore}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Play className="mr-2 h-4 w-4" />
+                PlayStore
               </Link>
             </Button>
           )}

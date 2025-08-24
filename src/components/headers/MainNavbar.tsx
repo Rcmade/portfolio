@@ -11,7 +11,7 @@ import MainSidebar from "@/components/sidebars/MainSidebar";
 
 const MainNavbar = () => {
   return (
-    <nav className="flex items-center justify-between rounded-md border-b px-6 py-4 shadow-md md:px-12 xl:px-32">
+    <nav className="flex items-center justify-between rounded-md border-b px-3 py-4 shadow-md sm:px-5 md:px-12 xl:px-32">
       <LogoButton />
       <div className="hidden items-center gap-x-10 md:flex">
         {navLinksContent.map(({ title, href }) => (

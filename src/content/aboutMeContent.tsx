@@ -16,7 +16,7 @@ export const contactLinks = [
     href: process.env.CONTACT_LINKEDIN,
     title: "LinkedIn",
   },
-];
+] as const;
 
 export const techStack = {
   "Next.js": {

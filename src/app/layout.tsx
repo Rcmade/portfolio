@@ -37,7 +37,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <MainNavbar />
-          <main className="px-2 md:px-12 xl:px-32">{children}</main>
+          <main className="px-3 py-4 sm:px-5 md:px-12 xl:px-32">
+            {children}
+          </main>
           <MainFooter />
           <Toaster position="top-center" />
         </ThemeProvider>
