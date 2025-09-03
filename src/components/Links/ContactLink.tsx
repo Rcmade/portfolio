@@ -11,12 +11,14 @@ interface ContactLinkProps
   title: string;
   href: string;
   Icon: LucideIcon | React.ElementType;
+  iconSize?: number;
 }
 const ContactLink = ({
   href,
   title,
   Icon,
   className,
+  iconSize,
   ...rest
 }: ContactLinkProps) => {
   return (
@@ -25,8 +27,12 @@ const ContactLink = ({
       href={href}
       className={cn("flex max-w-full gap-x-2", className)}
     >
-      <Icon />
-      <span className="truncate text-sm sm:text-lg md:text-xl w-full">{title}</span>
+      <Icon size={iconSize} />
+      {title && (
+        <span className="w-full truncate text-sm sm:text-lg md:text-xl">
+          {title}
+        </span>
+      )}
     </Link>
   );
 };

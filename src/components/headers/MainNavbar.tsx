@@ -3,8 +3,6 @@ import React from "react";
 import LogoButton from "@/components/button/LogoButton";
 import { ThemeButton } from "@/components/button/ThemButton";
 import NavLink from "@/components/Links/NavLink";
-import { Menu } from "lucide-react";
-import { Button } from "../ui/button";
 import { navLinksContent } from "@/content/navLinksContent";
 import MainSidebarButton from "@/components/button/MainSidebarButton";
 import MainSidebar from "@/components/sidebars/MainSidebar";

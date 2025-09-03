@@ -13,6 +13,11 @@ export const navLinksContent = [
     href: "/contact",
   },
 
+  {
+    title: "Projects",
+    href: "/projects",
+  },
+
   // {
   //   title: "Blog",
   //   href: "/blog",

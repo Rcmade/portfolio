@@ -1,7 +1,8 @@
 import { ProjectCardProps } from "@/types";
 
-type Type = "professional" | "personal";
-export const projectContent: Record<Type, ProjectCardProps[]> = {
+export const projectType = ["professional", "personal",] as const;
+export type ProjectType = typeof projectType[number];
+export const projectContent: Record<ProjectType, ProjectCardProps[]> = {
   professional: [
     {
       id: "hono-docs",

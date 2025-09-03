@@ -107,14 +107,14 @@ export default function AboutPage() {
                 <h3 className="text-lg font-semibold">
                   Bachelor of Technology in Information Technology
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground"> 
                   Malawa institute of science and technologies | 2022 - 2026
                 </p>
                 <p className="text-muted-foreground text-sm">
                   Currently pursuing a B.Tech in Information Technology, with a
                   strong focus on web development, software engineering, and
                   front-end technologies. Actively involved in personal and
-                  collaborative <ProjectsLink text="projects" /> that
+                  collaborative<ProjectsLink text="projects" /> that
                   demonstrate my passion for coding and building user-friendly
                   web applications.
                 </p>

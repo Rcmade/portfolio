@@ -30,7 +30,7 @@ const MainFooter = () => {
             <h4 className="text-foreground text-sm font-semibold">
               Social Media
             </h4>
-            <nav className="flex gap-2">
+            <nav className="flex gap-4">
               {contactLinks.map(({ Icon, href, title }) => (
                 <ContactLink
                   key={title}
@@ -38,6 +38,8 @@ const MainFooter = () => {
                   href={href!}
                   title=""
                   target="_blank"
+                //  iconSize={50}
+                 className="max-w-fit"
                 />
               ))}
             </nav>
