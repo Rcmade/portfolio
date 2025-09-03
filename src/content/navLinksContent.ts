@@ -4,6 +4,10 @@ export const navLinksContent = [
     href: "/",
   },
   {
+    title: "Projects",
+    href: "/projects",
+  },
+  {
     title: "About",
     href: "/about",
   },
@@ -11,11 +15,6 @@ export const navLinksContent = [
   {
     title: "Contact",
     href: "/contact",
-  },
-
-  {
-    title: "Projects",
-    href: "/projects",
   },
 
   // {
