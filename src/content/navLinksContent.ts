@@ -17,6 +17,11 @@ export const navLinksContent = [
     href: "/contact",
   },
 
+  {
+    title: "Resume",
+    href: "/resume/Rahul_Chourasiya_Full_Stack_Developer_Resume.pdf",
+  },
+
   // {
   //   title: "Blog",
   //   href: "/blog",

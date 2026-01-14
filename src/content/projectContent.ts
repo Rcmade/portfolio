@@ -1,9 +1,46 @@
 import { ProjectCardProps } from "@/types";
 
-export const projectType = ["professional", "personal",] as const;
-export type ProjectType = typeof projectType[number];
+export const projectType = ["professional", "personal"] as const;
+export type ProjectType = (typeof projectType)[number];
 export const projectContent: Record<ProjectType, ProjectCardProps[]> = {
   professional: [
+    {
+      id: "Mapinger",
+      title: "Mapinger - Web-Based Indoor Wayfinder",
+      links: {
+        live: "https://mapinger.com/map?projectId=6941158b8de6ea65c823ce97",
+      },
+      images: ["/images/mapinger1.png"],
+      description:
+        "A production-ready indoor wayfinding system with multi-block navigation, accessibility-aware routing, analytics, and event campaigns, built on interactive SVG maps and robust backend services.",
+      implemented: [
+        "Built multi-block navigation with full CRUD for buildings, floors, and blocks",
+        "Implemented accessible routing with elevator detection and turn-by-turn guidance",
+        "Enhanced door/exit detection to prevent overlapping paths across complex shapes",
+        "Optimized floor switching and automatic level transitions during navigation",
+        "Built analytics dashboard with charts and usage insights",
+        "Developed event campaign modules for admin and client integration",
+        "Implemented responsive SVG map alignment across devices",
+        "Enhanced store search with quick input, direct map selection, and sync",
+        "Polished UI components: floating menus, selectors, tooltips, zoom, and branding",
+        "Added offline support and deployment stability with map switching fixes",
+      ],
+      techStackList: [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Tailwind CSS",
+        "Zustand",
+        "React Query",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "AWS",
+      ],
+      startDate: "Sep 2025",
+      endDate: "Jan 2026",
+      featured: true,
+    },
     {
       id: "hono-docs",
       title: "Hono-Docs - Auto-generated API Docs for Hono Framework",
@@ -95,6 +132,7 @@ export const projectContent: Record<ProjectType, ProjectCardProps[]> = {
       endDate: "Jun 2024",
       featured: true,
     },
+
     {
       id: "noon",
       title: "NOON - FM Radio & Media Streaming Platform",
