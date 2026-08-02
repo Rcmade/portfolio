@@ -54,5 +54,11 @@
   "overrides": {
     "@types/react": "19.1.11",
     "@types/react-dom": "19.1.7"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "sharp",
+      "unrs-resolver"
+    ]
   }
 }
